@@ -17,7 +17,7 @@ By the end of this lesson, you will be able to:
 
 ## Materials 
 
-[Lecture 3 slides](https://github.com/Bea-Taylor/CASA007_lectures/blob/main/L3_hypothesis_testing.html)
+[Lecture 3 slides](./lectures/L3_hypothesis_testing.qmd)
 
 [Lecture 3 tutorial](notebooks/W03_hypothesis_testing_practical.ipynb)
 

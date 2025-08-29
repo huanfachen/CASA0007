@@ -13,7 +13,7 @@ format:
     transition: none
     slide-number: false
     preview-links: auto
-    theme: casa-slides.scss
+    theme: [serif, ./css/casa-slides.scss]
     footer: "&copy; CASA &nbsp; | &nbsp; [ucl.ac.uk/bartlett/casa](https://www.ucl.ac.uk/bartlett/casa)"
 filters:
  - code-visibility

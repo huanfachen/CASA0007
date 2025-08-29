@@ -1,3 +1,7 @@
 /.quarto/
+/_site/
+/_freeze/
+.DS_Store
+*.code-workspace
 notebooks/W05_quiz.ipynb
 notebooks/W05_quiz_solution.ipynb

@@ -3,7 +3,7 @@ title: "Exploratory Data Analysis I"
 subtitle: "Understanding and describing data"
 author: 
   - name: "Huanfa Chen"
-email: "huanfa.chen@ucl.ac.uk"
+  - email: "huanfa.chen@ucl.ac.uk"
 date-as-string: "19 August 2025"
 from: markdown+emoji
 format:
@@ -14,16 +14,16 @@ format:
     transition: none
     slide-number: false
     preview-links: auto
-    theme: casa-slides.scss
+    theme: [serif, ./css/casa-slides.scss]
     footer: "&copy; CASA &nbsp; | &nbsp; [ucl.ac.uk/bartlett/casa](https://www.ucl.ac.uk/bartlett/casa)"
 filters:
- - code-visibility
+  - code-visibility
 lightbox: auto
 title-slide-attributes:
-    data-background-image: "images/title-slide.png"
-    data-background-size: stretch
-    data-background-opacity: "0.08"
-    data-background-color: "#4e3c56"
+  data-background-image: "images/title-slide.png"
+  data-background-size: stretch
+  data-background-opacity: "0.08"
+  data-background-color: "#4e3c56"
 ---
 
 # Key Information 
@@ -56,6 +56,7 @@ This lecture focuses on understanding and describing data.
 :::
 
 ## Learning Objectives
+
 By the end of this lecture you should:
 
 1. Understand basic data types;
@@ -117,6 +118,7 @@ By the end of this lecture you should:
 - *The coordinate of 8 is twice as far as that of 4*? ❌
 
 ## Ratio
+
 - Allow for **ratio** between items
 - The zero value is unique and non-arbitrary.
 - Example: mass, length, energy
@@ -125,11 +127,13 @@ By the end of this lecture you should:
   - ✅ Ratio (*2kg is twice as heavy as 1kg*)
 
 ## Notes
+
 - 'Encoding' does not change the nature of a measurement.
 - Gender variable (male, female, others) is NOMINAL.
 - If this variable is encodeded {male:0, female:1, others:2}, is it NOMINAL, or INTERVAL?
 
 ## Another categorisation: numerical vs. categorical
+
 | Type                           | Category        | Notes                                          |
 | ------------------------------ | --------------- | ---------------------------------------------- |
 | Quantitative (numerical) data  | Discrete data   | Only in whole numbers, *e.g.* number of staffs |
@@ -139,6 +143,7 @@ By the end of this lecture you should:
 
 
 ## Quiz time
+
 ::: {.notes}
 Mentimeter quiz 
 
@@ -147,9 +152,6 @@ Mentimeter quiz
 # How do you descibe a ratio data? 
 
 ## Key metrics
-:::: {.columns}
-
-::: {.column width="50%"}
 
 ::: {.incremental}
 - Quantity
@@ -157,14 +159,7 @@ Mentimeter quiz
 - The spread
 :::
 
-:::
-
-::::
-
 ## US city population
-:::: {.columns}
-
-::: {.column width="100%"}
 
 ::: {.incremental}
 - Quantity: 282 values
@@ -174,11 +169,8 @@ Mentimeter quiz
 - Should use mean or median? median is better than mean, as data is unlikely normal distributed
 :::
 
-:::
-
-::::
-
 ## Variance: quantifying spread
+
 Denote city population by $[y_1, y_2, ..., y_n]$ and variance by $\sigma^2$
 
 $$
@@ -191,6 +183,7 @@ $$
 A large variance means considerable spreadedness in data.
 
 ## Standard deviation $\sigma$
+
 $$
 \begin{aligned}
 \text{Standard Deviation} = \sqrt{\text{Variance}}
@@ -200,7 +193,6 @@ $$
 - Unit: if $y$ is in unit of meter (m), then St. Dev is in unit of m, variance in unit of $\text{m}^2$
 
 ## Summary of key metrics
-:::: {.columns}
 
 ::: {.incremental}
 - Quantity
@@ -210,16 +202,17 @@ $$
 - *Please check two types of SPECIAL VALUES before computing these metrics.*
 :::
 
-::::
-
 # Visualising data
+
 ![](images/picture_worth_thousand_words.jpg){style="max-width:70%; max-height:70%; margin:auto;"}
 
 ## FT visual vocabulary
+
 - https://ft-interactive.github.io/visual-vocabulary/
 ![](images/FT_visual_vocabulary.jpg){style="max-width:90%; max-height:90%; margin:auto;"}
 
 ## Boxplot for a dataset
+
 - Showing distribution of a dataset
 
 ![](images/Boxplot.jpg){style="width:70%; height:70%;"}
@@ -227,17 +220,20 @@ $$
 ## Boxplot for comparing multiple datasets
 
 ## When boxplot fails?
+
 - When there are lots of 'outliers' in the data
 - What are 'Outliers'?
 
 # Special values: null and outliers
 
 ## *Null* values
+
 - Representing the absence of data or an unknow value
 - Different from *zero* or *a blank space*
 - Null values should be excluded before computing mean or std
 
 ## Null island in geography
+
 - long=0, lat=0. Not even an island!
 - It became famous because some software assigned "0,0" for long-lat when location is missing
 - Many events were mapped to this one, including lots on Strava
@@ -274,9 +270,11 @@ $$
 | **Influential Outliers**       | Appear extreme but are integral to the underlying pattern or model, e.g. NYC in US city population data | Should keep them, as removing them could distort the analysis or overlook important features of the data |
 
 ## Detecting outlier: interquartile range (IQR)
+
 ![](images/outlier_detection_Tukey_Fences.jpg)
 
 ## Quiz: which type of outliers?
+
 - error vs. irregular pattern vs. influential
 
 1. In building height data, 10-storey building with 1m height
@@ -284,11 +282,13 @@ $$
 1. In UK city GDP data, GDP of Greater London
 
 ## Summary: describing a dataset
+
 - Key metrics
 - Null values and outliers (and handle them!)
 - Visualising data
 
 # Overview 
+
 We've covered: 
 
 - Data types: levels of measurements; quantitative & qualitative

@@ -1,38 +1,16 @@
 project:
-  type: book
-  output-dir: docs
-book:
-  title: "CASA0007: \n Quantitative Methods"
-  author: "[Huanfa Chen](https://huanfachen.github.io), [Adam Dennett](https://adamdennett.co.uk/), [Bea Taylor](https://profiles.ucl.ac.uk/82618-beatrice-taylor)"
-  date: "08/18/2025"
-  chapters:
-    - index.qmd
-    - part: "A. Basics"
-      chapters:
-        - W01_EDA1.qmd
-        - W02_EDA2.qmd
-        - W03_HypoTesting.qmd
-        - W04_LA.qmd
-
-    - part: "B. Correlation and Regression"
-      chapters:
-        - W05_Correlation.qmd
-        - W06_Regression.qmd
-        - W07_GLM.qmd
-        - W08_MLReg.qmd
-    - part: "C. Dimension Reduction & Clustering"
-      chapters:
-        - W09_DR.qmd
-        - W10_Clustering.qmd
-  repo-url: https://github.com/huanfachen/CASA0007/
-  google-analytics: G-NJWVSV2MSC
-  repo-actions: [edit]
-  downloads: [pdf, epub]
-  sharing: [twitter, facebook]
-  favicon: favicon.ico
-  sidebar:
-    logo: logo_white.png
-    collapse-level: 2
+  type: website
+  output-dir: _site
+  render:
+    - "*.qmd"
+  resources:
+    - "bib/"
+    - "img/"
+    - "!data/"
+execute:
+  freeze: auto
+metadata-files:
+  - _website.yml
 
 bibliography: references.bib
 
@@ -44,7 +22,13 @@ format:
     code-copy: true
     code-overflow: wrap
     highlight-style: monokai.theme
-    linkcolor: "#34a832"        
+    linkcolor: "#34a832"
+    toc: true
+    toc-title: "On this page"
+    toc-depth: 2
+    toc_float:
+      collapsed: false
+      smooth_scroll: true   
 
   pdf:
     documentclass: scrreprt

@@ -11,11 +11,11 @@ format:
   revealjs: 
     logo: "images/CASA_logo.svg"
     template-partials: 
-      - title-slide.html
+      - ./lectures/title-slide.html
     transition: none
     slide-number: false
     preview-links: auto
-    theme: casa-slides.scss
+    theme: [serif, ./lectures/css/casa-slides.scss]
     footer: "&copy; CASA &nbsp; | &nbsp; [ucl.ac.uk/bartlett/casa](https://www.ucl.ac.uk/bartlett/casa)"
 filters:
  - code-visibility

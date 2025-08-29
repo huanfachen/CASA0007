@@ -1,0 +1,48 @@
+website:
+  title: "CASA0007: QM"
+  #author: "[Huanfa Chen](https://huanfachen.github.io), [Adam Dennett](https://adamdennett.co.uk/), [Bea Taylor](https://profiles.ucl.ac.uk/82618-beatrice-taylor)"
+  #date: "08/18/2025"
+  repo-url: https://github.com/huanfachen/CASA0007/
+  google-analytics: G-NJWVSV2MSC
+  repo-actions: [edit]
+  # downloads: [pdf, epub]
+  #sharing: [twitter, facebook]
+  page-navigation: true
+  reader-mode: true
+  favicon: favicon.ico
+  navbar:
+    background: primary
+    search: true
+    logo: "logo_white.png"
+    #collapse: true
+    #collapse-below: md
+    left:
+      - sidebar:parta
+      - sidebar:partb
+      - sidebar:partc
+
+  sidebar:
+    - id: parta
+      title: "Part A. Basics"
+      style: "docked"
+      background: light
+      collapse-level: 2
+      contents:
+        - W01_EDA1.qmd
+        - W02_EDA2.qmd
+        - W03_HypoTesting.qmd
+        - W04_LA.qmd
+
+    - id: partb
+      title: "Part B. Correlation and Regression"
+      contents:
+        - W05_Correlation.qmd
+        - W06_Regression.qmd
+        - W07_GLM.qmd
+        - W08_MLReg.qmd
+
+    - id: partc
+      title: "Part C. Dimension Reduction & Clustering"
+      contents:
+        - W09_DR.qmd
+        - W10_Clustering.qmd

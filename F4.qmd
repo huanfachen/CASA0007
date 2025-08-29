@@ -145,11 +145,13 @@ var efficientFilteredSet = imgCol.filterBounds(Map.getCenter())
 print('Efficient filtering: Less than 50% clouds in this area, 2000-2010',  
    efficientFilteredSet.size());
 ```
+
 Each of the two chained sets of operations will give the same result as before for the number of images. While the second order is more efficient, both approaches are likely to return the answer to the Code Editor at roughly the same time for this very small example. The order of operations is most important in larger problems in which you might be challenged to manage memory carefully. As in the milk example in which you narrowed geographically first, it is good practice in Earth Engine to order the filters with the filterBounds first, followed by metadata filters in order of decreasing specificity.
 
-:::{.callout-note}
+::: {.callout-note}
 Code Checkpoint F40a. The book’s repository contains a script that shows what your code should look like at this point.
 :::
+
 Now, with an efficiently filtered collection that satisfies our chosen criteria, we will next explore the second stage: executing a function for all of the images in the set.
 
 ### Mapping over Image Collections in Earth Engine
@@ -2472,11 +2474,12 @@ In the thumbnail sequence, the color palette shows Forest (class 1) as green, Wa
 :::{.callout-note}
 Code Checkpoint F48a. The book’s repository contains a script that shows what your code should look like at this point.
 :::
+
 ### Basics of the BULC Interface
 
 To see if BULC can successfully sift through these Events, we will use BULC’s GUI (Fig. F4.8.1), which makes interacting with the functionality straightforward. :::{.callout-note}
 Code Checkpoint F48b in the book’s repository contains information about accessing that interface.
-:::
+
 ![Fig. F4.8.1 BULC interface](F4/image5.png)
 
 

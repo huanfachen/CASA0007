@@ -1,4 +1,7 @@
-# Introduction to Regression
+---
+title: Introduction to Regression
+author: Adam Dennett
+---
 
 Before learning how to load, process, and analyze satellite imagery in Google Earth Engine, it will be helpful to know a few basic principles of remote sensing. This section provides a brief overview of some important concepts and terminology that will be used throughout the course, including active and passive sensors; spatial, spectral, and temporal resolution; and orbits.
 
@@ -101,7 +104,7 @@ F-->G
 C-->H
 ```
 
-This is, of course, a bit of an exaggeration. But if you're interested in a visible phenomenon that happens outdoors and that isn't very tiny, chances are an earth-observing satellite has taken a picture of it. What that picture can tell you naturally depends on what you're interested in learning. For a deeper dive into analyzing optical satellite imagery, see the subsection on [multispectral remote sensing.](F2.qmd.qmd#multispectral-remote-sensing-remote_sensing).
+This is, of course, a bit of an exaggeration. But if you're interested in a visible phenomenon that happens outdoors and that isn't very tiny, chances are an earth-observing satellite has taken a picture of it. What that picture can tell you naturally depends on what you're interested in learning. For a deeper dive into analyzing optical satellite imagery, see the subsection on [multispectral remote sensing.](F2.qmd#multispectral-remote-sensing-remote_sensing).
 
 There are several different types of optical satellite imagery available in the GEE catalogue. The main collections are the Landsat and Sentinel series of satellites, which are operated by NASA and the European Space Agency, respectively. Landsat satellites have been in orbit since 1972, and Sentinel satellites have been in orbit since 2015. Norway's International Climate and Forest Initiative (NICFI) has also contributed to the GEE catalogue by providing a collection of optical imagery from Planet's PlanetScope satellites. These are higher resolution (4.7 meters per pixel) than Landsat (30m/px) and Sentinel-2 (10m/px), but are only available for the tropics. Even higher resolution imagery (60cm/px) is available from the GEE catalogue from the National Agriculture Imagery Program, but it is only available for the United States. For more details, see the "Datasets" section below.
 

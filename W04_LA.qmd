@@ -17,9 +17,9 @@ By the end of this lesson, you will be able to:
 
 ## Materials 
 
-[Lecture 4 slides](https://github.com/Bea-Taylor/CASA007_lectures/blob/main/L3_hypothesis_testing.html)
+[Lecture 4 slides](./lectures/L4_LA.qmd)
 
-[Lecture 4 tutorial](notebooks/W03_hypothesis_testing_practical.ipynb)
+[Lecture 4 tutorial](notebooks/W04_postgis2.ipynb)
 
 ## Exercises 
 
